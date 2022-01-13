@@ -1,0 +1,10 @@
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
