@@ -1,0 +1,16 @@
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.shuttles{
+  display: flex;
+    flex-wrap: wrap;
+}
+.shuttle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 20px;
+}
+

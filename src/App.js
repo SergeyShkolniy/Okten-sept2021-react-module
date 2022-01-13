@@ -1,10 +1,12 @@
 import './App.css'
 
+import Shuttles from "./components/Shuttles";
 
 const App = () => {
-    return (
-        <div>
 
+    return (
+        <div className={'wrapper'}>
+            <div><Shuttles/></div>
         </div>
     );
 };
