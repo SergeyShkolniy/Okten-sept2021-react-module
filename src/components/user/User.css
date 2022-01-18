@@ -1,0 +1,19 @@
+.wrapper{
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.wrapper:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.user{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.user button{
+    cursor: pointer;
+}
