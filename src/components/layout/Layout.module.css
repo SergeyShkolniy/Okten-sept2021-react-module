@@ -1,0 +1,6 @@
+.outlet{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 20px;
+}

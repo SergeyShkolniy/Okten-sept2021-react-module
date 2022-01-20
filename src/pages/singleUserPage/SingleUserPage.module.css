@@ -1,0 +1,13 @@
+.main{
+    padding: 5px;
+}
+
+li{
+    padding: 3px 0;
+}
+button{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 10px 30px;
+}

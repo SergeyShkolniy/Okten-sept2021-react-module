@@ -1,0 +1,17 @@
+
+button{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 10px 30px;
+}
+.main{
+    height: 200px;
+}
+.block{
+    height: 100px;
+}
+.text{
+    padding-top: 10px;
+    text-align: justify;
+}
