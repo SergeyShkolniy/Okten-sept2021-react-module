@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid brown;
+}
+.text{
+    padding-top: 10px;
+    text-align: justify;
+}

@@ -1,0 +1,11 @@
+.main{
+    padding: 5px 15px;
+    border-bottom: 1px solid brown;
+}
+.main a{
+    text-decoration: none;
+    color: black;
+}
+.main a:hover{
+    font-weight: bold;
+}
