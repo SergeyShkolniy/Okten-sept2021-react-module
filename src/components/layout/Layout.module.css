@@ -1,0 +1,5 @@
+.outlet{
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    overflow-y: auto;
+}
