@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    padding-top: 10px;
+    height: 70px;
+    background-color: #f9eeee;
 }
 .container{
     display: flex;
