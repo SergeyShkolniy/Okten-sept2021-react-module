@@ -1,0 +1,7 @@
+.dog {
+    margin: 10px 0;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
