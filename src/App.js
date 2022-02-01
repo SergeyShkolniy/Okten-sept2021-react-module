@@ -1,21 +1,28 @@
+import {Routes, Route, Navigate} from "react-router-dom";
+
 import './App.css'
-import {useState} from "react";
-import {Cars, Form} from "./components";
+import {UserDetailsPage, UserPostsPage, UsersPage} from "./pages";
+import {Layout} from "./components";
+
 
 
 const App = () => {
 
-    const [cars, setCars] = useState([]);
 
-
-    const getCarId = (id) => {
-        setCars(cars.filter(car => car.id !== id))
-    }
     return (
         <>
-            <Form/>
-            <Cars getCarId={getCarId}/>
+            <Routes>
+                <Route path={'/'} element={<Layout/>}>
 
+                    <Route index element={<Navigate to={'users'}/>}/>
+
+                    <Route path={'users'} element={<UsersPage/>}>
+                        <Route path={':id'} element={<UserDetailsPage/>}>
+                            <Route path={'posts'} element={<UserPostsPage/>}/>
+                        </Route>
+                    </Route>
+                </Route>
+            </Routes>
         </>
     );
 };

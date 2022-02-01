@@ -1,3 +1,4 @@
-export * from './Car/Car'
-export * from './Cars/Cars'
-export * from './Form/Form'
+export * from './User/User';
+export * from './Layout/Layout';
+export * from './UserDetails/UserDetails';
+export * from './UserPost/UserPost'
