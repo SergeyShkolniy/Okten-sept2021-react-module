@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Car = ({car, getCarId}) => {
+
+const Car = ({car,getCarId}) => {
     const {id, model, price, year} = car
 
     return (
