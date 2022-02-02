@@ -1,0 +1,19 @@
+.button {
+    padding: 7px 35px;
+    margin: 10px 0 20px 0;
+    background-color: lightcoral;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.button:hover {
+    box-shadow: 0 0 2px black;
+}
+.deleteFlex {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
