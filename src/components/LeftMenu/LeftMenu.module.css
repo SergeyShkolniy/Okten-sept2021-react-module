@@ -1,0 +1,38 @@
+.leftMenuContainer {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: relative;
+    border-radius: 7px 0 0 7px;
+    height: 100%;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+
+    box-sizing: border-box;
+
+}
+.block{
+    min-height: 100px;
+
+}
+.leftMenuContainer h3 {
+padding: 25px 0 5px 30px;
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.leftMenuUnderline {
+
+
+margin: 0 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.leftMenuLink{
+
+    padding: 15px 30px;
+}
+.leftMenuLink:hover{
+
+    cursor: pointer;
+    background-color: rgba(169, 168, 168, 0.15);
+}

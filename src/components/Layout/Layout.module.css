@@ -1,0 +1,5 @@
+.layoutContainer{
+    width: 1200px;
+    height: 90vh;
+    display: flex;
+}
