@@ -36,3 +36,11 @@ margin: 0 15px;
     cursor: pointer;
     background-color: rgba(169, 168, 168, 0.15);
 }
+.block a{
+    text-decoration: none;
+    color: white;
+}
+.block a[class='active']{
+    text-decoration: underline;
+    color: red;
+}

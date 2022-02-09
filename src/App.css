@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    font-size: 14px;
     background-image: url("https://images.wallpaperscraft.ru/image/single/poligon_treugolniki_geometricheskij_128478_1920x1080.jpg");
 }
 .flex{
@@ -15,4 +15,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+body.dark-theme {
+    color: white;
+    background: black;
 }

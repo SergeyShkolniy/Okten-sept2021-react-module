@@ -1,0 +1,16 @@
+.MovieDetailsPage{
+    display: flex;
+    column-gap: 25px;
+    padding: 35px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+
+
+.MovieDetailsPage img{
+    width: 300px;
+}
