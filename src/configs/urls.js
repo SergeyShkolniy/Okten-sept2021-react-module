@@ -1,10 +1,13 @@
 const baseURL = "https://api.themoviedb.org/3";
 export default baseURL;
 
-export const apiKey = "2ddeb403459b2402c51c7be94632ef88";
+export const apiKey = "movie?api_key=2ddeb403459b2402c51c7be94632ef88";
+export const key = "?api_key=2ddeb403459b2402c51c7be94632ef88";
 
 export const urls = {
 
-    movies: `/discover/movie?api_key=${apiKey}`
-
+    movies: `/discover/${apiKey}`,
+    movie: '/movie',
+    search: '/search',
+    genres: '/genre/movie/list'
 }

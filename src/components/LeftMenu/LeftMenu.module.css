@@ -44,3 +44,24 @@ margin: 0 15px;
     text-decoration: underline;
     color: red;
 }
+.logo{
+
+    width: 70%;
+}
+
+/*-----------------------------------*/
+.blockAvatar{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    align-items: center;
+    padding: 30px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black
+}
+.blockAvatar span{
+    font-size: 12px;
+}
+.blockAvatar img{
+    width: 55px;
+}

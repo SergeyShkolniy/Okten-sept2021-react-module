@@ -1,0 +1,11 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.buttonFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

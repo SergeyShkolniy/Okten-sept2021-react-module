@@ -1,6 +1,12 @@
 .search{
     height: 40px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    border-bottom: 1px solid silver ;
+}
+.logo{
+
+    width: 70%;
 }

@@ -3,6 +3,10 @@ import './App.css'
 import {Layout} from "./components";
 import {MoviesListPage} from "./pages/MoviesListPage/MoviesListPage";
 import {MovieDetailsPage} from "./pages/MovieDetailsPage/MovieDetailsPage";
+import {SearchMovies} from "./pages/SearchMovies/SearchMovies";
+import {TestPage} from "./pages/testPage/TestPage";
+import {MoviesByGenrePage} from "./pages/MoviesByGenrePage/MoviesByGenrePage";
+
 
 
 
@@ -15,8 +19,10 @@ const App = () => {
                     <Route index element={<Navigate to={'movies'}/>}/>
 
                     <Route path={'movies'} element={<MoviesListPage/>}/>
-                    <Route path={'moviesDetails'} element={<MovieDetailsPage/>}/>
-
+                    <Route path={'movies/:id'} element={<MovieDetailsPage/>}/>
+                    <Route path={'search'} element={<SearchMovies/>}/>
+                    <Route path={'test'} element={<TestPage/>}/>
+                    <Route path={'genres/:id'} element={<MoviesByGenrePage/>}/>
                 </Route>
             </Routes>
         </div>

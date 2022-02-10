@@ -6,10 +6,12 @@ import {MoviesListCard} from "../../components/MoviesListCard/MoviesListCard";
 
 const MoviesListPage = () => {
 
-
+    const [page, setPage] = useState(1);
+    console.log(page)
+    const dispatch = useDispatch();
 
     const {movies} = useSelector(state => state.movies);
-
+    console.log(movies)
     const xxx = movies.results
     const pages = movies.page
 const pagesAll = movies.total_pages
@@ -20,9 +22,8 @@ const pagesAll = movies.total_pages
 
 
 
-    const [page, setPage] = useState(1);
 
-    const dispatch = useDispatch();
+
 
     useEffect(() => {
         dispatch(getAllMovies(page));
