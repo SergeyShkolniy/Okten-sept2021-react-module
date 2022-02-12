@@ -4,8 +4,21 @@
     justify-content: center;
 
 }
+.button{
+    padding: 5px 15px;
+    cursor: pointer;
+}
 .buttonFlex{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
+    column-gap: 25px;
+}
+
+.title{
+    padding: 10px 0 10px 15px;
+}
+.page{
+    padding: 0 15px;
 }

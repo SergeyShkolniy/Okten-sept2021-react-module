@@ -1,31 +1,34 @@
 import {Routes, Route, Navigate} from "react-router-dom"
+
 import './App.css'
 import {Layout} from "./components";
-import {MoviesListPage} from "./pages/MoviesListPage/MoviesListPage";
-import {MovieDetailsPage} from "./pages/MovieDetailsPage/MovieDetailsPage";
-import {SearchMovies} from "./pages/SearchMovies/SearchMovies";
-import {TestPage} from "./pages/testPage/TestPage";
-import {MoviesByGenrePage} from "./pages/MoviesByGenrePage/MoviesByGenrePage";
-
-
+import {MoviesListPage} from "./pages";
+import {MovieDetailsPage} from "./pages";
+import {SearchMovies} from "./pages";
+import {MoviesByGenrePage} from "./pages";
 
 
 const App = () => {
+
     return (
-        <div className={"flex"}>
-            <Routes>
-                <Route path={'/'} element={<Layout/>}>
 
-                    <Route index element={<Navigate to={'movies'}/>}/>
+       <div className={'backgroundImage'}>
+           <div className={"flex"}>
 
-                    <Route path={'movies'} element={<MoviesListPage/>}/>
-                    <Route path={'movies/:id'} element={<MovieDetailsPage/>}/>
-                    <Route path={'search'} element={<SearchMovies/>}/>
-                    <Route path={'test'} element={<TestPage/>}/>
-                    <Route path={'genres/:id'} element={<MoviesByGenrePage/>}/>
-                </Route>
-            </Routes>
-        </div>
+               <Routes>
+                   <Route path={'/'} element={<Layout/>}>
+
+                       <Route index element={<Navigate to={'movies'}/>}/>
+
+                       <Route path={'movies'} element={<MoviesListPage/>}/>
+                       <Route path={'movies/:id'} element={<MovieDetailsPage/>}/>
+                       <Route path={'search'} element={<SearchMovies/>}/>
+                       <Route path={'genres/:id'} element={<MoviesByGenrePage/>}/>
+                   </Route>
+               </Routes>
+           </div>
+       </div>
+
     );
 };
 

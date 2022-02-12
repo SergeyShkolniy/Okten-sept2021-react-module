@@ -7,6 +7,19 @@
     border-bottom: 1px solid silver ;
 }
 .logo{
-
-    width: 70%;
+    width: 80%;
+}
+.inputSearch{
+    padding: 3px 7px;
+}
+.inputSearch:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.buttonSearch{
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.buttonSearch a{
+ text-decoration: none;
 }

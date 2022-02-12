@@ -8,9 +8,11 @@
     flex-direction: column;
     row-gap: 15px;
 }
-
-
-
 .MovieDetailsPage img{
     width: 300px;
+}
+.buttonBack{
+    padding: 5px 10px;
+    margin: 10px 25px;
+    cursor: pointer;
 }

@@ -1,25 +1,19 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {movieServices} from "../services";
 
-
 export const getGenres = createAsyncThunk(
     'genresSlice/getGenres',
     async (_, {rejectWithValue}) => {
-
-            const genres = await movieServices.getGenres()
-            return genres
+        const genres = await movieServices.getGenres()
+        return genres
 
     }
 )
 export const getMoviesByGenre = createAsyncThunk(
     'genresSlice/getMoviesByGenre',
-    async ({id,page}, {rejectWithValue}) => {
-        try {
-            const movies = await movieServices.getByGenreId(id,page)
-            return {movies}
-        } catch (e) {
-            rejectWithValue(e)
-        }
+    async ({id, page}, {rejectWithValue}) => {
+        const movies = await movieServices.getByGenreId(id, page)
+        return {movies}
     }
 )
 
@@ -32,9 +26,7 @@ export const genresSlice = createSlice(
 
         },
         extraReducers: {
-            // [getGenres.pending]: (state) => {
-            //     state.statusGenres = 'pending'
-            // },
+
             [getGenres.fulfilled]: (state, action) => {
                 state.statusGenres = 'fulfilled'
                 state.genres = action.payload
@@ -43,9 +35,7 @@ export const genresSlice = createSlice(
                 state.statusGenres = 'rejected'
                 state.error = action.payload
             },
-            // [getMoviesByGenre.pending]: (state) => {
-            //     state.statusMovies = 'pending'
-            // },
+
             [getMoviesByGenre.fulfilled]: (state, action) => {
                 state.statusMovies = 'fulfilled'
                 state.movies = action.payload.movies

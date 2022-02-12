@@ -1,13 +1,13 @@
-import React, {useEffect} from 'react';
+import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getGenres} from "../../store/genres.slice";
+
+import {getGenres} from "../../store";
 import {Genre} from "../Genre/Genre";
 
 const Genres = () => {
 
     const {genres} = useSelector(state => state.genres.genres);
     const dispatch = useDispatch();
-    console.log(genres)
 
     useEffect(() => {
         dispatch(getGenres())

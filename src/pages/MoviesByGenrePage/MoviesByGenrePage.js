@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {MoviesListCard} from "../../components/MoviesListCard/MoviesListCard";
-import {getAllMovies} from "../../store/movie.slice";
-import {getMoviesByGenre} from "../../store/genres.slice";
+
 import css from "./MoviesByGenrePage.module.css";
-import {MoviesGenre} from "../../components/MoviesGenre/MoviesGenre";
+import {getMoviesByGenre} from "../../store";
+import {MoviesGenre} from "../../components";
 
 const MoviesByGenrePage = () => {
 
@@ -13,11 +12,9 @@ const MoviesByGenrePage = () => {
 
     const {genres, movies} = useSelector(state => state.genres);
 
-
     const xxxx = movies.results
     const pages = movies.page
     const pagesAll = movies.total_pages
-
 
     const dispatch = useDispatch();
     const [page, setPage] = useState(1);
@@ -41,12 +38,12 @@ const MoviesByGenrePage = () => {
 
     return (
         <div>
-            <h3>{genres.genres.map(genre => genre.id == id && genre.name)}</h3>
+            <h3 className={css.title}>{genres.genres.map(genre => genre.id == id && genre.name)}</h3>
             {movies.results && <div className={css.flex}>{movies.results.map(movie => <MoviesGenre key={movie.id}
                                                                                            movie={movie}/>)}</div>}
             <div className={css.buttonFlex}>
                 <button className={css.button} onClick={back}>back</button>
-                <div>{pages} of {pagesAll}</div>
+                <div className={css.flex}> <div className={css.page}>{pages}</div>  of  <div className={css.page}>{pagesAll}</div> </div>
                 <button className={css.button} onClick={forward}>forward</button>
             </div>
         </div>

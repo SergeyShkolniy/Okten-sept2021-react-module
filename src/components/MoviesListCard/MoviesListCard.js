@@ -1,21 +1,23 @@
-import React, {useEffect} from 'react';
-import css from "./MoviesListCard.module.css"
+import React from "react";
 import {Link} from "react-router-dom";
-import {useDispatch} from "react-redux";
-import {getAllMovies} from "../../store/movie.slice";
+
+import css from "./MoviesListCard.module.css"
 
 const MoviesListCard = ({movie}) => {
-    const {title, poster_path} = movie
 
+    const {title, poster_path, vote_average} = movie
 
     return (
-        <div className={css.block}>
-            <Link to={`/movies/${movie.id}`}>
-                <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt="title"/>
-                <div>{title}</div>
+        <div className={css.container}>
+            <Link className={css.uyuyu} to={`/movies/${movie.id}`}>
+
+                    <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt="title" title={title}/>
+                    <div className={css.flex}>
+                        <div className={css.title}>{title}</div>
+                        <div>{vote_average}</div>
+                    </div>
+
             </Link>
-
-
         </div>
     );
 };

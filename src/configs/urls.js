@@ -8,6 +8,6 @@ export const urls = {
 
     movies: `/discover/${apiKey}`,
     movie: '/movie',
-    search: '/search',
+    search: '/search/movie',
     genres: '/genre/movie/list'
 }

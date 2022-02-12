@@ -1,15 +1,13 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from "react";
+import {NavLink} from "react-router-dom";
+
+import css from "../LeftMenu/LeftMenu.module.css";
 
 const Genre = ({genre}) => {
    const {id, name} = genre
 
     return (
-        <div>
-            <Link to={'/genres/' + id}>
-            {name}
-            </Link>
-        </div>
+            <NavLink to={'/genres/' + id}><div className={css.leftMenuLink}>{name}</div></NavLink>
     );
 };
 

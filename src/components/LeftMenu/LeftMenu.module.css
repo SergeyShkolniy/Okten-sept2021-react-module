@@ -9,12 +9,17 @@
     box-sizing: border-box;
 
 }
+.user{
+    display: flex;
+    flex-direction: column;
+}
+
 .block{
-    min-height: 100px;
+    min-height: 80px;
 
 }
 .leftMenuContainer h3 {
-padding: 25px 0 5px 30px;
+padding: 15px 0 5px 30px;
     font-size: 11px;
     font-weight: normal;
     text-transform: uppercase;
@@ -22,27 +27,28 @@ padding: 25px 0 5px 30px;
 }
 
 .leftMenuUnderline {
-
-
-margin: 0 15px;
+    margin: 0 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .leftMenuLink{
-
-    padding: 15px 30px;
+    width: 100%;
+    padding: 8px 40px;
 }
 .leftMenuLink:hover{
-
     cursor: pointer;
     background-color: rgba(169, 168, 168, 0.15);
 }
 .block a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+.block a:hover{
+    color: darkorange;
 }
 .block a[class='active']{
     text-decoration: underline;
-    color: red;
+    color: darkorange;
 }
 .logo{
 
@@ -55,7 +61,7 @@ margin: 0 15px;
     justify-content: center;
     column-gap: 15px;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     color: white;
     text-shadow: 1px 1px 1px black
 }
@@ -64,4 +70,18 @@ margin: 0 15px;
 }
 .blockAvatar img{
     width: 55px;
+}
+.blockTheme{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 15px;
+}
+.blockTheme p{
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.blockTheme p:hover{
+    color: darkorange;
 }
